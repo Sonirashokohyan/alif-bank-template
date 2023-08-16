@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alifMobi</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .navbaar{
+            display: flex;
+            justify-content: space-around;
+            margin: 1em;
+            padding: 1em;
+        }
+        /* ############# header content ############### */
+        .about{
+            padding: 50px 0px;
+            background: rgb(238, 231, 211);
+            height: 70vh;
+
+        }
+
+        .about .wrapper{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 400px;
+            padding: 0px 15vw;
+            /* height: ; */
+
+        }
+        .container h1, p{
+            font-size: 3.5rem;
+        }
+
+        .container p{
+            font-size: 2.5rem;
+        }
+        
+        .container img{
+            height: 40vh;
+        }
+        img2{
+            float: left;
+        }
+        header{
+            background-color: azure;
+        }
+        /* ############## icone part########## */
+        .icon{
+            margin: 0 23em;
+            padding: 2em;
+            background-color: rgba(254, 255, 255, 0.97);
+            height: 45vh;
+            border: white;
+            border-radius: 6%;
+            box-shadow: 0px 5px 10px 0px #aaa;
+            width: 70vw;
+        }
+        .icon1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3em;
+        }
+        .icon2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3em;
+        }
+
+    /* ####### 3rd part######### */
+
+        .part3{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: aliceblue;
+            border-radius: 10%;
+            width: 50vw;
+            height: 40vh;
+            margin: 10em 23em;
+            padding: 3em;
+            animation-name: part3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            -webkit-animation-delay: 2s;
+
+
+        }
+        @keyframes part3{
+            from{
+                margin: 10em 50em;
+            }
+            to{
+                margin: 10em 23em;
+            }
+        }
+       .part3 .text1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 1rem;
+            padding: 1em;
+        }
+        .part3 p{
+            font-size: 2rem;
+        }
+        .part3 h1{
+            font-size: 2.2rem;
+        }
+        .img3{
+            height: 20rem;
+            animation-name: img3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes img3{
+            from{
+                height: 20rem;
+            }
+            to{
+                height: 22rem;
+            }
+        }
+
+    /* ####### 4th part######### */
+
+         .part4{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(241, 212, 228);
+            border-radius: 10%;
+            width: 50vw;
+            height: 40vh;
+            margin: 10em 50em;
+            padding: 3em;
+            animation-name: part3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            -webkit-animation-delay: 3s;
+
+
+            }
+        @keyframes part4{
+            from{
+                margin: 10em 23em;
+            }
+            to{
+                margin: 10em 50em;
+            }
+            }
+
+            .part4 .text4{
+            height: 1rem;
+            padding: 1em;
+            }
+            .part4 p{
+                font-size: 2rem;
+            }
+            .part4 h1{
+                font-size: 2.2rem;
+            }
+            .img4{
+                height: 20rem;
+                animation-name: img4;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes img4{
+                from{
+                    height: 20rem;
+                }
+                to{
+                    height: 22rem;
+                }
+            }
+    /* ####### 5th part######### */
+
+            .part5{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgba(157, 240, 157, 0.712);
+                border-radius: 10%;
+                width: 50vw;
+                height: 40vh;
+                margin: 10em 23em;
+                padding: 3em;
+                animation-name: part5;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+                -webkit-animation-delay: 2s;
+
+
+            }
+            @keyframes part5{
+                from{
+                    margin: 10em 50em;
+                }
+                to{
+                    margin: 10em 23em;
+                }
+            }
+            .part5 .text5{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 1rem;
+                padding: 1em;
+            }
+            .part5 p{
+                font-size: 2rem;
+            }
+            .part5 h1{
+                font-size: 2.2rem;
+            }
+            .img5{
+                height: 20rem;
+                animation-name: img5;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes img5{
+                from{
+                    height: 20rem;
+                }
+                to{
+                    height: 22rem;
+                }
+            }
+
+    /* ####### 6th part######### */
+
+        .part6{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(243, 224, 170);
+            border-radius: 10%;
+            width: 50vw;
+            height: 40vh;
+            margin: 10em 50em;
+            padding: 3em;
+            animation-name: part6;
+            animation-duration: 2s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            -webkit-animation-delay: 3s;
+
+
+        }
+        @keyframes part6{
+            from{
+                margin: 10em 50em;
+            }
+            to{
+                margin: 10em 23em;
+            }
+            }
+
+            .part6 .text6{
+            height: 1rem;
+            padding: 1em;
+            }
+            .part6 p{
+                font-size: 2rem;
+            }
+            .part6 h1{
+                font-size: 2.2rem;
+            }
+            .img6{
+                height: 20rem;
+                animation-name: img6;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes img6{
+                from{
+                    height: 20rem;
+                }
+                to{
+                    height: 22rem;
+                }
+            }
+
+            .part7{
+                background-color: rgba(173, 180, 180, 0.511);
+                padding: 2rem;
+            }
+            .text7{
+                display: flex;
+                align-items: center;
+                padding: 3rem;
+                margin:2rem  25rem;
+            }
+            .maintxt{
+                text-align: center;
+                font-size: 2.5rem;
+            }
+            .text8{
+                padding: 3em;
+                margin: 3em;
+            }
+            .txt1, .txt2, .txt3, .txt4, .txt5{
+                padding: 2em;
+                font-size: 1.4rem;
+            }
+            .img7{
+                border-radius: 10%;
+                margin: 1rem;
+                border: 5px solid black;
+            }
+
+    </style>
+
+</head>
+
+
+
+<body>
+    <header>
+            <nav class="navbaar">
+                <img src="https://alifmobi.tj/images/logo_black.svg" alt="">
+                <select style="border: none; width: 4em; background-color: azure; font-size: 2rem;" >
+                    <option value="tajik">Tajik</option>
+                    <option value="russian">Russian</option>
+                </select>
+            </nav>
+
+        <section  class="about">
+            <div class=" wrapper container ">
+            <div class="about-text">
+                <h1>State payments with alif mobi</h1><br>
+                <p>Pay taxes, duties, water and electricity and other <br> government services with alif mobi from your seat</p>
+            </div>
+                <img class="img2" src="https://alifmobi.tj/images/public_services.png" alt="">  
+            </div>
+        </section>
+      
+    </header>
+
+    <section class="icon">
+        <div class="icon1">
+            <div class="1-1">
+               <img src="https://alifmobi.tj/images/wallet.svg" alt="">
+                <h2>Кешбэкҳо дар  қаҳвахонаҳо ва  супермаркетҳо</h2> 
+                </div>
+                <div class="1-2">
+                <img src="https://alifmobi.tj/images/rocket.svg" alt="">
+                <h2>Дизайни нав, замонавӣ ва қулай</h2>
+            </div>
+            <div class="1-3">
+                <img src="https://alifmobi.tj/images/language.svg" alt="">
+                <h2>Гуногунзабон: ҳамёнро бо 4 забон истифода баред</h2>
+            </div>
+        </div>
+
+        <div class="icon2">
+            <div class="2-1">
+               <img src="https://alifmobi.tj/images/candy.svg" alt="">
+                <h2>Бонус аз пайвасти корти <br> «Салом»</h2> <br>
+                </div>
+            <div class="2-2">
+                <img src="https://alifmobi.tj/images/playlist.svg" alt="">
+                <h2>Сторисҳои шавқовар ва <br> маълумотҳои муфид <br></h2><br>
+            </div>
+            <div class="2-3">
+                <img src="https://alifmobi.tj/images/checked.svg" alt="">
+                <h2>Мушаххаскунии онлайн</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="part3">
+        <div class="text1 text2"></div>
+                <img class="img3" src="https://alifmobi.tj/images/mobile_1.svg" alt="">
+                <div class="text3">
+                <h1>Payment as <br> it's easy to blink</h1><br>
+                <p>Pay more than 200 services without commission, without getting up.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="part4">
+        <div class="text4"></div>
+            <div>
+                <h1>Don't limit yourself</h1><br>
+                <p>Get a hello card for free. <br>
+                After concting to alif mobi, access goods on <br>
+                credit ith your phone. Pay the amount with the program. </p>
+            </div>
+                 <img class="img4" src="https://alifmobi.tj/images/card-salom.png" alt="">
+            
+        </div>
+        
+    </div>
+
+    <div class="part5">
+        <div class="text5"></div>
+        <img class="img5" src="https://alifmobi.tj/images/wallet_1.svg" alt="">
+            <div>
+                <h1>Fast shipping,
+                    24/7</h1><br>
+                <p>Send money without commission and receive <br> it in your wallet, wherever you are</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="part6">
+        <div class="text6"></div>
+            <div>
+                <h1>Care has no limits</h1><br>
+                <p>Send money to your loved ones from Russia to Tajikistan safely, <br>
+                quickly and without commission. Also, send money to Russia <br>
+                immediately and receive transfers to any "National Card" <br>
+                through the Contact and Unistream system. </p>
+            </div>
+                <img class="img6" src="https://alifmobi.tj/images/somoni.svg" alt="">
+            
+        </div>
+        
+    </div>
+
+    </section>
+
+
+    <section class="part7">
+        <h1 class="maintxt">How to send money to another country <br> is it possible</h1>
+        <div class="text7">
+            <div class="text8">
+              <div class="txt1">
+               <h1>Go to alif mobi and select the " Transfers" section</h1> 
+            </div>
+
+            <div class="txt2">
+               <h1>Press "Transfers abroad" </h1> 
+            </div>
+
+            <div class="txt3">
+               <h1>Select the required country from the list</h1> 
+            </div>
+
+            <div class="txt4">
+               <h1>Enter the card number, <br> amount and full name in latin</h1> 
+            </div>
+
+            <div class="txt5">
+               <h1>The money has been transferred to your loved ones </h1> 
+            </div>    
+            </div>
+            
+
+            <img class="img7" src="https://alifmobi.tj/images/screen_1.png" alt="">
+        </div>
+        
+    </section>
+    
+</body>
+</html>

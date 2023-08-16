@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIF BANK</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* ###### html element styling### */
+
+        html{
+            font-size: 62.5%;
+        }
+
+        /* body{
+            font-family: 'Montserrat', sans-serif;
+        } */
+
+        ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 0.15em 1em;
+        }
+
+        a{
+            font-size: 1.6rem;
+            text-decoration: none;
+        }
+
+        p, li{
+        font-size: 1.6rem;
+        margin-bottom: 0.5em;
+         }
+         
+         /* ######## header styling######### */
+
+        .header{
+            position: relative;
+            height: 95vh;
+            background: url(#);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .navbar{
+            padding: 1rem;
+            transition: 0.5s ease-in-out;
+            /* background-color: rgb(11, 11, 10); */
+            border-bottom: 0px solid #0f0f0f;
+        }
+
+        /* .header .navbar .nav-items{
+            float: right;
+            margin-top: 1rem;
+        } */
+
+        /* .header .navbar .nav-item{
+            display: inline-block;
+            padding: 1rem;
+            text-transform: uppercase;
+
+        } */
+
+        .navbar a:link,
+        .navbar a:visited{
+            color: #0d0d0df4;
+        }
+
+        .navbar a{
+            padding-bottom: 0.3rem;
+        }
+        .navbar a:hover{
+            border-bottom: 1px solid #0f0f0f;
+            color: rgb(47, 164, 47);
+
+        }
+        .navbar::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+         /* ############# header content ############### */
+         .about{
+            padding: 10px 10px;
+            margin: 10px 200px;
+            background: rgb(60, 57, 111);
+            height: 60vh;
+            border-radius: 4%;
+
+        }
+
+        .about .wrapper{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            height: 400px;
+            /* padding: 20px 15vw; */
+            padding: 20px;
+            /* height: ; */
+
+        }
+        .container p{
+            font-size: 2rem;
+        }
+        .container h1{
+            font-size: 2.2rem;
+        }
+
+        .container img{
+            height: 40vh;
+        }
+        img2{
+            float: left;
+        }
+        /* ########### below page####### */
+        .items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            margin: 10px 150px;
+        }
+        .items img{
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+        }
+        
+        .items h2, p{
+            font-size: 2rem;
+        }
+
+        /* ########## box style ########## */
+        .box1, .box2, .box3{
+            background-color: rgba(222, 245, 220, 0.579);
+            padding: 2em;
+            margin: 1em;
+            border-radius: 4%;
+            transition: 500ms ease-in-out;
+        }
+        .box2, .box3{
+            background-color: rgba(92, 150, 230, 0.177);
+        }
+       
+        .box1:hover{
+            padding: 2.3em;
+            margin: 1.3em;
+
+        }
+        .box2:hover{
+            padding: 2.3em;
+            margin: 1.3em;
+        }
+        .box3:hover{
+            padding: 2.3em;
+            margin: 1.3em;
+        }
+
+        /* ####### 3 page####### */
+        .buy{
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            margin: 10px 150px;
+            height: 60vh;
+            border-radius: 4%;
+        }
+        .buy img{
+            height: 300px;
+            width: 400px;
+            margin: 10px;
+            /* padding: 30px; */
+        }
+        .buy h2, p{
+            font-size: 2rem;
+        }
+        .text{
+            padding: 30px;
+        }
+        .container2{
+            background-color: rgba(239, 205, 205, 0.663);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60rem;
+            border-radius: 4%;
+        }
+        .phone{
+            padding: 30px;
+            margin: 30px;
+        }
+        .phone a{
+            font-size: 2rem;
+        }
+        .phone hr{
+            width: 50rem;
+        }
+        hr{
+            padding: 3em;
+        }
+/* ########## 3rd page box style ########## */
+        .icon{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            margin: 10px 150px;
+        }
+        .icon img{
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+        }
+        icon h3{
+            font-size: 3rem;
+        }
+
+         .box4, .box5, .box6, .box7, .box8, .box9{
+            padding: 0.5em;
+            margin: 0.5em;
+            border-radius: 4%;
+            transition: 500ms ease-in-out;
+        }
+        
+    /* ########## hover box4,5,6,7,8,9####### */
+        .box4:hover{
+            background-color: rgb(9, 100, 9);
+        }
+        .box5:hover{
+            background-color:rgb(9, 100, 9) ;
+        }
+        .box6:hover{
+            background-color:rgb(9, 100, 9) ;
+        }
+        .box7:hover{
+            background-color:rgb(9, 100, 9) ;
+        }
+        .box8:hover{
+            background-color:rgb(9, 100, 9) ;
+        }
+        .box9:hover{
+            background-color:rgb(9, 100, 9) ;
+        }
+         /* ############# last part of main page ############### */
+         .website{
+            padding: 1rem;
+            margin: 1rem 30rem;
+            background: rgba(233, 233, 234, 0.767);
+            height: 50vh;
+            border-radius: 4%;
+
+        }
+
+        .website .last{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            height: 400px;
+            /* padding: 20px 15vw; */
+            padding: 0px 20px;
+            /* height: ; */
+
+        }
+        .lastone p{
+            font-size: 2rem;
+        }
+        .lastone h1{
+            font-size: 2.2rem;
+        }
+
+        .lastone img{
+            height: 40vh;
+        }
+        img3{
+            float: left;
+        }
+
+        /* ############ information part########### */
+        .final{
+            background-color: rgba(1, 1, 1, 0.8);
+            height: 70vh;
+            color: white;
+            font-size: 1rem;
+        }
+        .info1{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 2em;
+        }
+        .in1, .in2, .in3{
+            padding: 2em;
+            margin: 2em;
+        }
+        .in1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .info2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3em 2em;
+            margin: 4em;
+            border-top: 2px solid rgb(195, 206, 195);
+            border-bottom: 2px solid rgb(195, 206, 195);
+            width: 100rem;
+            text-align: center;
+        }
+        .info2 a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .info3{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100rem;
+            padding: 2em;
+            font-size: 1.5rem;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- <img src="https://alifmobi.tj/images/logo_black.svg" alt=""> -->
+            <ul class="nav-items">
+                <li><a href="/alifMobi">alif mobi</a></li>
+                <li><a href="/visa">Visa</a></li>
+                <li><a href="/salom">Salom</a></li>
+                <li><a href="/CarFinancing">Car financing</a></li>
+                <li><a href="/alifShop">alif shop</a></li>
+                <li><a href="/transfers">Transfers</a></li>
+                <li><a href="/deposits">Deposits</a></li>
+                <li><a href="/alifOnline">alif online</a></li>
+                <select style="border: none; width: 4em; ">
+                    <option value="More">More</option>
+                    <option value="vacanacy">vacanacy</option>
+                    <option value="korti milli">korti milli</option>
+                    <option value="javob alif">javob alif</option>
+                </select>
+            </ul>
+        </nav>
+        <section  class="about">
+            <div class=" wrapper container ">
+               <div class="about-text">
+                <h1>Free Visa Platinum</h1><br>
+                <p>Buy a package tour or air tr\ickets in installments and get a free premium card</p>
+            </div>
+                <img class="img2" src="https://alifwebsite.alif.tj/uploads/turpaket_95f1fc480f.png" alt="alif bank">
+            </div>
+        
+        </section>
+        
+    </header>
+
+    <section class="items">
+        <div class="box1">
+           <h2>Remittances to 50+ <br> countries </h2><br>
+           <p>Send money easily within the country <br> and abroad alif mobi</p>
+           <img src="https://alifwebsite.alif.tj/uploads/image_size_475c5ad9cc.png" alt="">
+        </div>
+        <div class="box2">
+            <h2>Make money work for you</h2><br>
+            <p>Deposit money receive it with collected income whenever you want</p>
+            <img src="https://alifwebsite.alif.tj/uploads/image_size_1_37bb8ed2b0.png" alt="">
+        </div>
+        <div class="box3">
+            <h2>All payments at fingertips</h2><br>
+            <p>Pay for purchases, transfer money and keep track of installments 24/7</p>
+            <img src="https://alifwebsite.alif.tj/uploads/mobii_bf4d33cbcb.png" alt="">
+        </div>
+        
+    </section>
+
+    <section class="buy">
+        <div class="container2">
+            <div class="text">
+               <h2>Buy now, pay later</h2><br>
+                <p>No need to wait for the salary. Buy the necessary products now and pay for them for up to 24 months.</p> 
+            </div>
+            
+            <img src="https://alifwebsite.alif.tj/uploads/salom_0de0348c83.png" alt="">
+        </div>
+        <div class="phone">
+            <a href="#">Phones</a> <br>
+            <hr>
+            <a href="#">Conditioners</a><br>
+            <hr>
+            <a href="#">Refrigerators</a><br>
+            <hr>
+        </div>
+    </section>
+    <section class="icon">
+        <div class="box4">
+            <img src="https://alifwebsite.alif.tj/uploads/image_size_3_2d6338bb75.png" alt="">
+            <h3>Cash loans</h3>
+        </div>
+        <div class="box5">
+            <img src="https://alifwebsite.alif.tj/uploads/imagize_665f5faa0f.png" alt="">
+            <h3>Q & A</h3>
+        </div>
+        <div class="box6">
+            <img src="https://alifwebsite.alif.tj/uploads/atms_c751630721.png" alt="">
+            <h3>Adresses and ATM's</h3>
+        </div>
+        <div class="box7">
+            <img src="https://alifwebsite.alif.tj/uploads/image_size_b703b172f6.png" alt="">
+            <h3>Online Shopping</h3>
+        </div>
+        <div class="box8">
+            <img src="https://alifwebsite.alif.tj/uploads/pokupka_9e1ba00f89.png" alt="">
+            <h3>Dollar purchase</h3>
+        </div>
+        <div class="box9">
+            <img src="https://alifwebsite.alif.tj/uploads/image_size_7_bab4415fc4.png" alt="">
+            <h3>Documents Delivery</h3>
+        </div>
+    </section>
+
+    <section  class="website">
+        <div class=" last lastone ">
+           <div class="text2">
+            <h1>Did you like the website?</h1><br>
+            <p>We need your thoughts to improve the new website. <br> Please click the button and send us your feedback 💚</p>
+        </div>
+            <img class="img3" src="https://alifwebsite.alif.tj/uploads/Question_ffed598f0a.png" alt="">
+        </div>
+    
+    </section>
+    
+    <section class="final">
+        <div class="info1">
+            <div class="in1">
+              <img src="https://alifwebsite.alif.tj/uploads/Logo_de70e1ac1f.svg" alt="">
+            <h2>9, Bahovuddinov St. <br>Landmark: Kand restaurant</h2><br>
+            <a href="#">Branch offices and banking center</a>  
+            </div>
+            <div class="in2">
+                <h1>900</h1><br>
+                <p>For phone calls within Tajikistan</p><br>
+                <h1>+99248 888 1111</h1>
+                <p>For international calls</p>
+                <h1>+992446001520</h1>
+                <p>National Bank of Tajikistan helpline for complaints and appeals</p>
+            </div>
+            <dic class="in3">
+                <p>Mobile app</p>
+                <img src="https://alifwebsite.alif.tj/uploads/gplay_fc3976cf13.svg" alt="">
+                <p>Social media</p>
+                <img src="https://alifwebsite.alif.tj/uploads/tg_fbbf20a907.svg" alt="">
+            </dic>
+        </div>
+
+        <div class="info2">
+            <a href="#">ABOUT US</a>
+            <a href="#">ADRESSES</a>
+            <a href="#">DOCUMENTS</a>
+            <a href="#">VACANCIES</a>
+            <a href="#">HELP</a>
+        </div>
+
+        <div class="info3">
+            <h3>Made by : Sonira Shokohyan <br> and Bozorg Omid Shokohyan </h3>
+            <h3>class project</h3>
+            <h3>Leadreship: Teacher Ahmad Ramen</h3>
+        </div>
+    </section>
+    
+</body>
+</html>
